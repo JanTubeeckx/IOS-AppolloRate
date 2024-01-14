@@ -1,2 +1,2 @@
-# IOS-AppolloRate
-IOS app for an inventory tool
+# iOS-AppolloRate
+iOS app for an inventory tool

@@ -44,6 +44,8 @@
 		C95B9BA22B54432600541F97 /* AppolloRateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppolloRateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C95B9BA62B54432600541F97 /* AppolloRateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppolloRateUITests.swift; sourceTree = "<group>"; };
 		C95B9BA82B54432600541F97 /* AppolloRateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppolloRateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C95B9BC12B5495C700541F97 /* Font Awesome 6 Free-Regular-400.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 6 Free-Regular-400.otf"; sourceTree = "<group>"; };
+		C95B9BC22B5495C700541F97 /* Font Awesome 6 Free-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 6 Free-Solid-900.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		C95B9B8A2B54432400541F97 /* AppolloRate */ = {
 			isa = PBXGroup;
 			children = (
+				C95B9BC02B5495B400541F97 /* Fonts */,
 				C95B9B8B2B54432400541F97 /* AppolloRateApp.swift */,
 				C95B9B8D2B54432400541F97 /* ContentView.swift */,
 				C95B9B8F2B54432600541F97 /* Assets.xcassets */,
@@ -125,6 +128,15 @@
 				C95B9BA82B54432600541F97 /* AppolloRateUITestsLaunchTests.swift */,
 			);
 			path = AppolloRateUITests;
+			sourceTree = "<group>";
+		};
+		C95B9BC02B5495B400541F97 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C95B9BC12B5495C700541F97 /* Font Awesome 6 Free-Regular-400.otf */,
+				C95B9BC22B5495C700541F97 /* Font Awesome 6 Free-Solid-900.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,12 +431,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppolloRate/Preview Content\"";
 				DEVELOPMENT_TEAM = Y632HP3GS7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppolloRate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -448,12 +462,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppolloRate/Preview Content\"";
 				DEVELOPMENT_TEAM = Y632HP3GS7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AppolloRate/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

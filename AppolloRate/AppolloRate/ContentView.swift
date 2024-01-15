@@ -7,10 +7,9 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    
+struct HomePageView: View {
     var body: some View {
-        VStack (alignment: .center) {
+        VStack (alignment: .center, spacing: 10) {
             HStack {
                 Image("Logo")
                     .resizable()
@@ -18,12 +17,27 @@ struct ContentView: View {
                     .frame(width: 36.0, height: 36.0)
                 Text("AppolloRate.")
                     .font(.largeTitle)
-            }.padding(30)
-            
-            MenuCardView(label: "Schaderegistratie")
-            HStack {
-                MenuCardView(label: "Inventarisaties")
-                MenuCardView(label: "AppolloRate.")
+            }.padding(40)
+            ZStack {
+                RoundedRectangle(cornerRadius: 5)
+                    .foregroundColor(.blue)
+                VStack {
+                    Image("Clipboard")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 65.0, height: 65.0)
+                        .padding(10)
+                    Text("Schaderegistratie")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                }
+            }.onTapGesture {
+                print("tapped")
+            }
+            HStack(spacing: 10) {
+                MenuCardView(label: "Inventarisaties", image: "List")
+                MenuCardView(label: "AppolloRate.", image: "Info")
             }
             Text("De inventarisatietool voor uw bibliotheek")
                 .font(.title2)
@@ -36,24 +50,23 @@ struct ContentView: View {
 
 struct MenuCardView: View {
     var label: String
-    let FAIcons = "FontAwesome6Free-Solid"
+    var image: String
     
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 5)
                 .foregroundColor(.blue)
             VStack {
-                Image("Clipboard")
+                Image(image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .foregroundColor(.white)
-                    .frame(width: 56.0, height: 56.0)
+                    .frame(width: 45.0, height: 45.0)
+                    .padding(10)
                 Text(label)
                     .font(.title2)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
             }
-            
         }.onTapGesture {
             print("tapped")
         }
@@ -61,5 +74,5 @@ struct MenuCardView: View {
 }
 
 #Preview {
-    ContentView()
+    HomePageView()
 }
